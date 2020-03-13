@@ -1,33 +1,86 @@
 ---
 layout: post
-title: "Graphic Designer On The Road"
+title: "Up For The Challenge"
 description: "A graphic designer is a professional within the graphic design and graphic arts industry."
-date: 2020-01-05
-feature_image: images/road.jpg
+author: Sayak
+date: 2020-03-13
+feature_image: https://raw.githubusercontent.com/Reverse25/rev_blog/master/up_for_a_little_challenge/Begin%20Hack.jpg
 tags: [tips, work]
 ---
+---
 
-A graphic designer is a professional within the graphic design and graphic arts industry who assembles together images, typography, or motion graphics to create a piece of design. A graphic designer creates the graphics primarily for published, printed or electronic media, such as brochures (sometimes) and advertising. They are also sometimes responsible for typesetting, illustration, user interfaces, web design, or take a teaching position. A core responsibility of the designer's job is to present information in a way that is both accessible and memorable.
 
-<!--more-->
 
-A degree or certificate from an accredited trade school is usually considered essential for a graphic design position. After a career history has been established, though, the graphic designer's experience and number of years in the business are considered the primary qualifications. A portfolio, which is the primary method for demonstrating these qualifications, is usually required to be shown at job interviews, and is constantly developed throughout a designer's career. [[Source](https://en.wikipedia.org/wiki/Graphic_designer)]
+## solutions(h3)
 
-Ice molecules can exhibit up to sixteen different phases *(packing geometries)* that depend on temperature and pressure. When water is cooled rapidly (quenching), up to three different types of amorphous ice can form depending on the history of its pressure and temperature. When cooled slowly correlated proton tunneling occurs below 20 K giving rise to macroscopic quantum phenomena. Virtually all the ice on Earth's surface and in its atmosphere is of a hexagonal crystalline structure denoted as ice Ih (spoken as "ice one h") with minute traces of cubic ice denoted as ice Ic. The most common phase transition to ice Ih occurs when liquid water is cooled below 0°C (273.15K, 32°F) at standard atmospheric pressure. It may also be deposited directly by water vapor, as happens in the formation of frost. The transition from ice to water is melting and from ice directly to water vapor is sublimation.
+# Up For A Little Challenge?
+**Category:** forensic
 
-## Characteristics
+This challenge does not provide any clue and assume that we know what we are doing.
 
-As a naturally-occurring crystalline inorganic solid with an ordered structure, ice is considered a mineral.[citation needed] It possesses a regular crystalline structure based on the molecule of water, which consists of a single oxygen atom covalently bonded to two hydrogen atoms, or H-O-H. However, many of the physical properties of water and ice are controlled by the formation of hydrogen bonds between adjacent oxygen and hydrogen atoms; while it is a weak bond, it is nonetheless critical in controlling the structure of both water and ice.
+let's open Begin Hack.jpg the newly downloaded file
 
-> “ice contains no future , just the past, sealed away. As if they're alive, everything in the world is sealed up inside, clear and distinct. Ice can preserve all kinds of things that way- cleanly, clearly. That's the essence of ice, the role it plays.” 
-> <cite>― Haruki Murakami</cite>
+```bash
+eog Begin\ Hack.jpg
+```
 
-An unusual property of ice frozen at atmospheric pressure is that the solid is approximately 8.3% less dense than liquid water. The density of ice is 0.9167 g/cm3 at 0 °C,[4] whereas water has a density of 0.9998 g/cm³ at the same temperature. Liquid water is densest, essentially 1.00 g/cm³, at 4 °C and becomes less dense as the water molecules begin to form the hexagonal crystals[5] of ice as the freezing point is reached. This is due to hydrogen bonding dominating the intermolecular forces, which results in a packing of molecules less compact in the solid. Density of ice increases slightly with decreasing temperature and has a value of 0.9340 g/cm³ at −180 °C (93 K).[6]
+After opening with the image viewer there is no meaningful information and only ordinary images.
 
-When water freezes, it increases in volume (about 9% for freshwater).[7] The effect of expansion during freezing can be dramatic, and ice expansion is a basic cause of freeze-thaw weathering of rock in nature and damage to building foundations and roadways from frost heaving. It is also a common cause of the flooding of houses when water pipes burst due to the pressure of expanding water when it freezes.
+we do the string operation on the file
 
-The result of this process is that ice *(in its most common form)* floats on liquid water, which is an important feature in Earth's biosphere. It has been argued that without this property, natural bodies of water would freeze, in some cases permanently, from the bottom up,[8] resulting in a loss of bottom-dependent animal and plant life in fresh and sea water. Sufficiently thin ice sheets allow light to pass through while protecting the underside from short-term weather extremes such as wind chill. This creates a sheltered environment for bacterial and algal colonies. When sea water freezes, the ice is riddled with brine-filled channels which sustain sympagic organisms such as bacteria, algae, copepods and annelids, which in turn provide food for animals such as krill and specialised fish like the bald notothen, fed upon in turn by larger animals such as emperor penguins and minke whales.
+```bash
+strings Begin\ Hack.jpg | more
+``` | more
+Notice a few words that can be read when we scroll . There is one URL, open that URL and download the file there.
 
-When ice melts, it absorbs as much energy as it would take to heat an equivalent mass of water by 80 °C. During the melting process, the temperature remains constant at 0 °C. While melting, any energy added breaks the hydrogen bonds between ice (water) molecules. Energy becomes available to increase the thermal energy (temperature) only after enough hydrogen bonds are broken that the ice can be considered liquid water. The amount of energy consumed in breaking hydrogen bonds in the transition from ice to water is known as the heat of fusion.
+https://mega.nz/#!z8hACJbb!vQB569ptyQjNEoxIwHrUhwWu5WCj1JWmU-OFjf90Prg
 
-As with water, ice absorbs light at the red end of the spectrum preferentially as the result of an overtone of an oxygen-hydrogen (O-H) bond stretch. Compared with water, this absorption is shifted toward slightly lower energies. Thus, ice appears blue, with a slightly greener tint than for liquid water. Since absorption is cumulative, the color effect intensifies with increasing thickness or if internal reflections cause the light to take a longer path through the ice.
+Extract the file
+
+```bash
+unzip Up\ For\ A\ Little\ Challenge.zip
+```
+After extracting we get 2 folders namely Did I Forget Again?and __MACOSX. The folder that we will browse is Did I Forget Again?, while the folder __MACOSXis a folder that is automatically created when creating archives using a Mac computer. ( Read here )
+```
+cd Did\ I\ Forget\ Again\?
+ls -la
+``
+Here there are 1 image file and 1 hidden file with the extension cerb4. If we open the file Loo Nothing Becomes Useless ack.jpgthere will be no information provided, as well as when we see the string from this image.
+
+```bashi
+eog Loo\ Nothing\ Becomes\ Useless\ ack.jpg
+strings eog Loo\ Nothing\ Becomes\ Useless\ ack.jpg
+```
+This time we try to examine what is the .Processing.cerb4 file
+
+```
+file .Processing.cerb4
+```
+
+Once seen, it turns out that this file type is Zip .  we do the extracting .
+```
+mv .Processing.cerb4 .Processing.cerb4.zip
+unzip .Processing.cerb4.zip
+```
+
+When trying to extract this file, we are asked to enter a password. 
+
+Okay, now we go back to the first file and see that there is a password that can be used to extract the file.
+
+cd ..
+strings Begin\ Hack.jpg | more
+#Nothing Is As It Seems#
+
+Then we extract the file .Processing.cerb4.zipwith the password that we got. Finally, we open the extracted file .
+
+mv .Processing.cerb4 .Processing.cerb4.zip
+unzip .Processing.cerb4.zip
+```
+```
+cd Did\ I\ Forget\ Again\?
+unzip .Processing.cerb4.zip
+eog skycoder.jpg
+```
+the flag is in the image.just zoom in.
+
+flag: flag{hack_complete}
