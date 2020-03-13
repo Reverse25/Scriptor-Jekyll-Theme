@@ -9,10 +9,10 @@
 lang: en-US
 
 # Site title
-title: "Scriptor"
+title: "rEVERSE"
 
 # A description of your site for meta tag, search engine results.
-description: "Scriptor is a minimal, clean, modern & responsive Jekyll theme for writers"
+description: "rEVERSE is a blog for CTF explanation and solving "
 
 # The subpath of your site, e.g. /blog, for generating urls.
 baseurl: "/reverse"
