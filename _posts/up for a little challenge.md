@@ -1,5 +1,5 @@
 ---
-layout: post
+layout:post
 title: "Up For The Challenge"
 description: "A graphic designer is a professional within the graphic design and graphic arts industry."
 author: Sayak
